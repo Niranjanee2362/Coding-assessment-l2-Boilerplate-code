@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+    <title>Product Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Your code goes here -->
     <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+        <h1>Select Your Choice</h1>
+        <div class="tabs">
+            <button class="tab active" data-tab="men">Men</button>
+            <button class="tab" data-tab="women">Women</button>
+            <button class="tab" data-tab="kids">Kids</button>
+        </div>
+        <div cdivs="tab-content">
+            <div class="tab-pane active" id="men"></div>
+            <div class="tab-pane" id="women"></div>
+            <div class="tab-pane" id="kids"></div>
+        </div>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
