@@ -1,4 +1,5 @@
 # Responsive Product Tabs
+Here is the deployed version of the project: [Project Link](https://marmeto-task-niranjanee.netlify.app/)
 I thank you for providing me with an opportunity to appear for this test and allow me to challenge myself. I thouroughly enjoyes taking up this assessment.
 
 ## Features
@@ -29,3 +30,5 @@ I thank you for providing me with an opportunity to appear for this test and all
     - *Creating the Product Element*: Creates a product element with the appropriate structure and styles.
     - *Creating the Inner HTML*: Sets up the inner HTML of the product element, including the badge, image, title, vendor, prices, discount, and a button.
 6. *Calculating Discount*: Calculates the discount percentage based on the product's price and the original compare-at price.
+
+
