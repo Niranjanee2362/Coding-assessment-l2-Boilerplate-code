@@ -1,6 +1,8 @@
 # Responsive Product Tabs
 Here is the deployed version of the project: [Project Link](https://marmeto-task-niranjanee.netlify.app/)
-I thank you for providing me with an opportunity to appear for this test and allow me to challenge myself. I thouroughly enjoyes taking up this assessment.
+
+
+I thank you for providing me with an opportunity to appear for this test and allow me to challenge myself. I thouroughly enjoyed taking up this assessment.
 
 ## Features
 1. *Responsive Design*: The layout adjusts to different screen sizes using CSS Grid and media queries.
