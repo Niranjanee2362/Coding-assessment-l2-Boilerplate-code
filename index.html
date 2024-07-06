@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Selection</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Product Tabs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Select Your Choice</h1>
-        <div class="tabs">
-            <button class="tab active" data-tab="men">Men</button>
-            <button class="tab" data-tab="women">Women</button>
-            <button class="tab" data-tab="kids">Kids</button>
-        </div>
-        <div cdivs="tab-content">
-            <div class="tab-pane active" id="men"></div>
-            <div class="tab-pane" id="women"></div>
-            <div class="tab-pane" id="kids"></div>
-        </div>
+      <h1>Select Your Choice</h1>
+      <div class="tabs">
+        <button class="tab active" data-tab="men">Men</button>
+        <button class="tab" data-tab="women">Women</button>
+        <button class="tab" data-tab="kids">Kids</button>
+      </div>
+      <div class="tabContent">
+        <div class="tabPanel active" id="men"></div>
+        <div class="tabPanel" id="women"></div>
+        <div class="tabPanel" id="kids"></div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.tab');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+    const tabPanes = document.querySelectorAll('.tabPanel');
 
     tabs.forEach(tab => {
         tab.addEventListener('click', function () {
@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://cdn.shopify.com/s/files/1/0564/3685/0790/files/multiProduct.json')
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
+                throw new Error('API Error:' + response.statusText);
             }
             return response.json();
         })
-        .then(data => populateProducts(data.categories))
-        .catch(error => console.error('Error fetching product data:', error));
+        .then(data => getProducts(data.categories))
+        .catch(error => console.error('Error fetching product data from API:', error));
 
-    function populateProducts(categories) {
+    function getProducts(categories) {
         categories.forEach(category => {
             const categoryName = category.category_name.toLowerCase();
             const tabPane = document.getElementById(categoryName);
@@ -48,14 +48,14 @@ document.addEventListener('DOMContentLoaded', function () {
             ${badge}
             <img src="${product.image}" alt="${product.title}">
             <div class="productInfo">
-            <h2>${product.title}</h2>
-            <p>•</p>
-            <p>${product.vendor}</p>
+                <h2>${product.title}</h2>
+                <p>•</p>
+                <p>${product.vendor}</p>
             </div>
             <div class="priceInfo">
-            <p>Rs ${product.price}</p>
-            <p class="original-price">Rs ${product.compare_at_price}</p>
-            <p class="discount">${discountPercentage}% Off</p>
+                <p class="finalPrice">Rs ${product.price}</p>
+                <p class="originalPrice">Rs ${product.compare_at_price}</p>
+                <p class="discount">${discountPercentage}% Off</p>
             </div>
             <button>Add to Cart</button>
         `;
